@@ -14,7 +14,7 @@ const Contact = ({ isFullscreen }) => {
             </div>
 
         <div className={clsx("h-full w-full p-5 space-y-5", isFullscreen && "flex flex-col  items-center text-center")}>
-            <img src="/images/me.jpg" alt="Matan" className="w-20 h-20 rounded-full overflow-hidden"/>
+            <img src="./images/me.jpg" alt="Matan" className="w-20 h-20 rounded-full overflow-hidden"/>
             <h3>Let’s Build Something</h3>
             <p>Got a project to ship, a bug to hunt down, or an automation idea? Hit me up.</p>
             <p>matangambash5@gmail.com</p>

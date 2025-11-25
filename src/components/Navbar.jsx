@@ -23,7 +23,7 @@ const Navbar = () => {
     return (
         <nav>
             <div>
-                <img src="/images/logo.svg" alt="logo" />
+                <img src="./images/logo.svg" alt="logo" />
                 <p style={{ color: "var(--menubar-text)" }}>Matan Portfolio</p>
 
                 <ul>
