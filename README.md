@@ -1,73 +1,76 @@
-# React + TypeScript + Vite
+# 🍏 macOS Portfolio
+### A fully interactive macOS-style developer portfolio built with React, TailwindCSS, and GSAP.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18.0-blue?logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/TailwindCSS-3.0-38bdf8?logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/GSAP-Animation-88CE02?logo=greensock&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vite-Bundler-9467fe?logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/Zustand-State%20Manager-orange" />
+</p>
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🖥 macOS Desktop Experience
+- macOS-style windows (Finder, Terminal, Resume, Photos, Contact, etc.)
+- Dock, navbar, wallpaper, and draggable desktop icons
+- Window maximize/minimize animations with GSAP
 
-## React Compiler
+### 🎨 Smooth UI & Animations
+- GSAP + Draggable for realistic macOS window movement
+- Easing, scaling, transitions
+- Desktop-like app-opening interactions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 📱 Fully Responsive
+- Mobile-ready design
+- Safe-area support (dvh, dvw)
+- Optimized for iPhone/Android
 
-## Expanding the ESLint configuration
+### 🧩 Modular Architecture
+- Components split into macOS “apps”
+- Zustand store for window & location management
+- Very easy to extend and customize
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧰 Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Area | Technologies |
+|------|--------------|
+| Framework | React (Vite) |
+| Styling | TailwindCSS |
+| Animations | GSAP + Draggable |
+| State | Zustand |
+| Icons | Lucide-React |
+| Language | JavaScript |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📂 Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+ ├── components/
+ ├── windows/
+ ├── store/
+ ├── constants/
+ ├── App.jsx
+ └── index.css
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ⚙️ Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/<your-username>/<repo>.git
+cd <repo>
+npm install
+npm run dev
 ```
+
+## 🏗 Build
+
+```bash
+npm run build
+```
+
+## 📜 License
+MIT License
+
+## ⭐ Support
+If you like this project, consider starring the repo!
