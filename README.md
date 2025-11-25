@@ -57,8 +57,8 @@ src/
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/<your-username>/<repo>.git
-cd <repo>
+git clone https://github.com/gambashM/portfolio.git
+cd portfolio
 npm install
 npm run dev
 ```
